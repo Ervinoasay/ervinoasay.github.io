@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+header {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #76FF03;
+}
+
+header .profile-pic {
+    width: 150px;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #76FF03;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #1E1E1E;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #76FF03;
+    font-size: 1.8em;
+}
+
+section p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+a {
+    color: #76FF03;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slide {
+    scroll-snap-align: center;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 500px;
+}
